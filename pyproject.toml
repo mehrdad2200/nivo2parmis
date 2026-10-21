@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nivo2parmis"
+version = "1.0.0"
+description = "Merge a Nivo backup (.nivo) into a Parmis backup (.par) — انتقال تاریخچه‌ی نیوو به پارمیس"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["cryptography>=41", "tzdata"]
+classifiers = ["License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3", "Natural Language :: Persian"]
+
+[project.optional-dependencies]
+dev = ["pytest", "jdatetime"]
+
+[project.scripts]
+nivo2parmis = "nivo2parmis.cli:main"
+
+[tool.setuptools]
+packages = ["nivo2parmis"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

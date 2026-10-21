@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "_help": "cash_account: شناسه‌ی حساب «کیف پول» در پارمیس. banks: نام بانک در نیوو -> شناسه‌ی حساب بانکی در پارمیس. categories[].target را ویرایش کنید. راهنما: docs/mapping.md",
+  "cash_account": 152,
+  "banks": {
+    "بانک نمونه": 173
+  },
+  "categories": [
+    {
+      "group": "expense",
+      "parent": "",
+      "name": "حمل و نقل",
+      "count": 31,
+      "sum": 830400,
+      "target": {
+        "under": 1,
+        "title": "حمل و نقل"
+      }
+    },
+    {
+      "group": "expense",
+      "parent": "",
+      "name": "خانواده",
+      "count": 6,
+      "sum": 12000000,
+      "target": {
+        "existing": 174
+      },
+      "note": "هم‌نام با حساب موجود: هزینه ها > خانواده"
+    },
+    {
+      "group": "expense",
+      "parent": "",
+      "name": "غذا و نوشیدنی",
+      "count": 31,
+      "sum": 6843000,
+      "target": {
+        "under_new_sub": {
+          "root": 1,
+          "title": "غذا و نوشیدنی"
+        },
+        "title": "غذا و نوشیدنی (عمومی)"
+      }
+    },
+    {
+      "group": "expense",
+      "parent": "",
+      "name": "قرض دادن",
+      "count": 1,
+      "sum": 1000000,
+      "target": {
+        "under": 1,
+        "title": "قرض دادن"
+      }
+    },
+    {
+      "group": "expense",
+      "parent": "",
+      "name": "نامشخص",
+      "count": 1,
+      "sum": 85000,
+      "target": {
+        "under": 1,
+        "title": "نامشخص"
+      }
+    },
+    {
+      "group": "expense",
+      "parent": "غذا و نوشیدنی",
+      "name": "میوه",
+      "count": 6,
+      "sum": 595000,
+      "target": {
+        "under_new_sub": {
+          "root": 1,
+          "title": "غذا و نوشیدنی"
+        },
+        "title": "میوه"
+      }
+    },
+    {
+      "group": "income",
+      "parent": "",
+      "name": "حقوق",
+      "count": 6,
+      "sum": 120000000,
+      "target": {
+        "under": 2,
+        "title": "حقوق"
+      }
+    },
+    {
+      "group": "income",
+      "parent": "",
+      "name": "سایر",
+      "count": 1,
+      "sum": 1000000,
+      "target": {
+        "under": 2,
+        "title": "سایر"
+      }
+    },
+    {
+      "group": "income",
+      "parent": "فروش",
+      "name": "فروش اینترنتی",
+      "count": 1,
+      "sum": 3500000,
+      "target": {
+        "existing": 175
+      },
+      "note": "هم‌نام با حساب موجود: درآمد ها > فروش اینترنتی"
+    }
+  ]
+}
